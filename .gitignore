@@ -1,0 +1,65 @@
+# LaTeX compilation artifacts
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.toc
+
+# abnTeX2 and nomenclature
+*.acn
+*.acr
+*.alg
+*.glo
+*.gls
+*.glg
+*.ilg
+*.ind
+*.ist
+*.loa
+*.lof
+*.lot
+*.nlo
+*.nls
+*.ntn
+*.not
+
+# BibTeX
+*.bib~
+
+# Index and glossary
+*.idx
+*.idv
+*.lg
+*.xdy
+
+# Makeindex
+*.ist
+*.glg
+
+# Miscellaneous
+*.brf
+*.loq
+*~
+.DS_Store
+Thumbs.db
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.*~
+
+# OS-specific
+.Trash-*/
+.AppleDouble
+.LSOverride
+
+# Build output
+/build/
