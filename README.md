@@ -1,11 +1,14 @@
 # PPGEC-abnTeX2
 
+Este projeto é um fork de [PPGEC-abnTeX2](https://github.com/victormelo/ppgec-abntex2) desenvolvido por [victormelo](https://github.com/victormelo)
+
 Modelo LaTeX para dissertacoes de mestrado do **PPGEC** (Programa de Pos-Graduacao em Engenharia de Computacao) da **UPE** (Universidade de Pernambuco), baseado no [abnTeX2](https://github.com/abntex/abntex2) — classe padrao para documentos academicos em conformidade com as normas da ABNT.
 
 ## Pre-requisitos
 
 - Distribuicao LaTeX completa ([TeX Live](https://www.tug.org/texlive/) ou [MiKTeX](https://miktex.org/))
-- Pacote **abnTeX2** instalado — [Guia de instalacao](https://github.com/abntex/abntex2/wiki/Instalacao)
+
+> **Nota:** O pacote abnTeX2 ja esta incluido localmente no diretorio `abntex2/`, portanto **nao e necessario instala-lo separadamente**. A classe `ppgec-abntex2.cls` configura automaticamente o caminho para os arquivos locais.
 
 ## Estrutura do Projeto
 
@@ -14,6 +17,11 @@ ppgec-abntex2-modelo.tex   # Documento principal (ponto de entrada)
 ppgec-abntex2.cls          # Classe customizada (capa, folha de rosto, rotulos)
 referencias.bib            # Base de dados bibliografica (BibTeX)
 Makefile                   # Alvo 'clean' para remover arquivos auxiliares
+
+abntex2/                   # Copia local do abnTeX2 (classe, estilos, bib)
+  latex/abntex2/           #   Classe base abntex2.cls e pacotes (.sty)
+  bibtex/bst/abntex2/      #   Estilos bibliograficos (abntex2-alf, abntex2-num)
+  bibtex/bib/abntex2/      #   Opcoes bibliograficas (abntex2-options.bib)
 
 pretextuais/               # Elementos pre-textuais
   capa.tex                 #   Metadados (titulo, autor, orientador, instituicao)

@@ -1,4 +1,4 @@
-%% Customizações do abnTeX2 (http://abnTeX2.googlecode.com) para a UFRGS
+%% Customizações do abnTeX2 (http://abnTeX2.googlecode.com) para a PPGEC
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
@@ -10,14 +10,14 @@
 %%
 %% This work has the LPPL maintenance status `maintained'.
 %%
-%% The Current Maintainer of this work is SEU_NOME, SEU_EMAIL
+%% The Current Maintainer of this work is Renan Costa Alencar, renan.costa.alencar@gmail.com
 %%
 %% Further information about abnTeX2 are available on http://abntex2.googlecode.com/
 %%
 
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ppgec-abntex2}[01/09/2016/ v1.0 Modelo do PPGEC-UPE baseado no abnTeX2]
+\ProvidesClass{ppgec-abntex2}[05/05/2026/ v2.0 Modelo do PPGEC-UPE baseado no abnTeX2]
 
 %
 % Repassa todos os parametros a classe abntex2,
@@ -25,6 +25,11 @@
   \PassOptionsToClass{\CurrentOption}{abntex2}%
 }
 \ProcessOptions\relax
+
+% Utiliza a copia local do abnTeX2 em vez da instalada no sistema
+\makeatletter
+\def\input@path{{abntex2/latex/abntex2/}{abntex2/bibtex/bst/}{abntex2/bibtex/bib/}}
+\makeatother
 \LoadClass{abntex2}
 
 
